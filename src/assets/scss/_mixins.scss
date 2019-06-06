@@ -1,0 +1,41 @@
+@import "variables";
+
+// flex-center
+@mixin flex-center($direction: row) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+// flex-between
+@mixin flex-between() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+//ellipsis
+@mixin ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+//multi line ellipsis
+@mixin multiline-ellipsis($num: 2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $num;
+  -webkit-box-orient: vertical;
+  white-space: normal !important;
+  word-wrap: break-word;
+}
+@mixin muli-mobile{
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

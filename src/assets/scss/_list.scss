@@ -1,0 +1,23 @@
+@import "mixins";
+
+// list
+.g-list {
+  padding-left: 10px;
+}
+.g-list-item {
+  overflow: hidden;
+  @include flex-between();
+  height: 44px;
+  padding-right: 10px;
+  border-bottom: 1px solid $border-color;
+  color: #686868;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+.g-list-text {
+  flex: 1;
+  line-height: 1.5;
+  @include ellipsis();
+}
