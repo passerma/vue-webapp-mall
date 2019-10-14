@@ -18,4 +18,4 @@ npm run build
 npm run build --report
 ```
 
-案例地址[vuewebapp商城](https://m.azoth.club)
+案例地址[vuewebapp商城](https://m.passerma.com)
